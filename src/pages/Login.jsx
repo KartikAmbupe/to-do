@@ -1,5 +1,6 @@
 import React from 'react'
 import GoogleButton from 'react-google-button'
+import { NavLink } from 'react-router-dom'
 function Login() {
   return (
     <div className='bg-black h-[100vh]'>
@@ -30,7 +31,7 @@ function Login() {
         <div className="create-account-wrap rounded-[7px] bg-[#eeedf1] text-[#8a8b8e] text-sm w-full cursor-pointer px-0 py-2.5 rounded-[0_0_4px_4px];
 ">
           <p>
-            Not a member? <span className='hover:text-[royalblue] underline text-[purple]'>Create Account</span>
+            Not a member? <NavLink to="/signup"><span className='hover:text-[royalblue] underline text-[purple]'>Create Account</span></NavLink>
           </p>
         </div>
       </div>

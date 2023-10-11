@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 function SignUp() {
   return (
     <div className='m h-[100vh] flex items-center  justify-center'>
@@ -18,8 +18,8 @@ function SignUp() {
 ' type="password" name="password" placeholder="Password" required />
             <input className='w-full bg-[#e2e2e2] rounded text-black text-[1.2rem] mx-0 my-[15px] px-5 py-3 border-[none];
 ' type="password"  name="password" placeholder="Confirm Password" required />
-            <button className='bg-[#4796ff] text-white text-base w-full mt-[15px] px-[15px] py-2.5 rounded-[5px] border-[none];
-' type="submit">Sign Up</button>
+            <NavLink to="/"><button className='bg-[#4796ff] text-white text-base w-full mt-[15px] px-[15px] py-2.5 rounded-[5px] border-[none];
+' type="submit">Sign Up</button></NavLink>
           </form>
         </div>
       </div>
