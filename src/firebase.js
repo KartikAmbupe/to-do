@@ -4,13 +4,13 @@ import {getDatabase} from 'firebase/database'
 import{getAuth, createUserWithEmailAndPassword, signOut} from 'firebase/auth'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAg62hPW6-_wbRsZGRnw8H1FOr4ulO0x-4",
-    authDomain: "to-do-93999.firebaseapp.com",
-    projectId: "to-do-93999",
-    storageBucket: "to-do-93999.appspot.com",
-    messagingSenderId: "11953481175",
-    appId: "1:11953481175:web:aedcc315e89a172a211792",
-    measurementId: "G-E0LHEG68FC"
+    apiKey: `${process.env.REACT_APP_API_KEY}`,
+    authDomain: `${process.env.REACT_APP_AUTH_DOMAIN}`,
+    projectId: `${process.env.REACT_APP_PROJECT_ID}`,
+    storageBucket: `${process.env.REACT_APP_STORAGE_BUCKET}`,
+    messagingSenderId: `${process.env.REACT_APP_MESSAGING_SENDER_ID}`,
+    appId: `${process.env.REACT_APP_APP_ID}`,
+    measurementId: `${process.env.REACT_APP_MEASUREMENT_ID}`
   };
 
   const app = initializeApp(firebaseConfig);
