@@ -45,7 +45,7 @@ const Login=()=> {
   return (
     <AuthProvider><div className='bg-black h-[100vh]'>
         <div className="title text-[white] tracking-[10px] text-[50px] font-semibold flex items-center justify-center py-12 ">
-            TODO...
+            TODO....
         </div>
         <div className="login-form-wrap  w-fit text-center rounded-[6px] shadow-[0px_30px_50px_0px_rgba(0,0,0,0.2)] m-auto pt-8">
         <h2 className='font-bold text-center text-[1.9rem] text-white mb-[25px]'>Login</h2>
