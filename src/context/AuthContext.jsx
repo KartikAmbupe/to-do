@@ -18,11 +18,11 @@ export function AuthProvider({ children }) {
   function login(email, password) {
     return auth.signInWithEmailAndPassword(email, password);
   }
-
+  
   function logout() {
     return auth.signOut();
   }
-
+  
   const googleSignIn = () => {
     const provider = new GoogleAuthProvider();
     return signInWithPopup(auth, provider);
@@ -44,8 +44,7 @@ export function AuthProvider({ children }) {
     logout,
     googleSignIn,
   };
-
+  
   return <AuthContext.Provider value={value}>{!loading && children}</AuthContext.Provider>;
 }
-
 export default AuthProvider;
