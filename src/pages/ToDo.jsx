@@ -52,7 +52,7 @@ const ToDo = () => {
         priority: priority,
         uidd: uidd,
       });
-  
+      
       setTodo("");
       setPriority(1);
     } else {
@@ -60,8 +60,8 @@ const ToDo = () => {
       console.error("Todo or priority is missing.");
     }
   };
-  
 
+  
   const handleDelete = (uidd) => {
     remove(ref(db, `/${auth.currentUser.uid}/${uidd}`));
   };
@@ -71,7 +71,7 @@ const ToDo = () => {
       completed: !todoToUpdate.completed,
     });
   };
-
+  
   const handleClearCompleted = () => {
     todos.forEach((todo) => {
       if (todo.completed) {
